@@ -14,7 +14,7 @@ public class CalculatorMain {
         if (scannerStr.length() != 0 && !isInputValid(scannerStr)){
             Expression exp = new ExpressionBuilder(scannerStr).build();
             double sumResult = exp.evaluate();
-            System.out.println("Sum: " + sumResult);
+            System.out.println("Result: " + sumResult);
         } else {
             System.out.println("Wrong input");
         }
